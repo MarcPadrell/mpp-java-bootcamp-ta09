@@ -1,5 +1,10 @@
 package ej01;
 
+/**
+ * Clase Main para instanciar los diferentes tipos de electrodomesticos.
+ * @author marcp
+ *
+ */
 public class ElectrodomesticoApp {
 
 	public static void main(String[] args) {
@@ -8,7 +13,8 @@ public class ElectrodomesticoApp {
 		int precio_electrodomesticos = 0;
 		int precio_television = 0;
 		int precio_lavadora = 0;
-
+		
+		// Añadimos diferentes objetos al array de electrodomesticos
 		array_electrodomesticos[0] = new Electrodomestico();
 		array_electrodomesticos[1] = new Electrodomestico(300, 80);
 		array_electrodomesticos[2] = new Electrodomestico(150, "lila", 'H', 100);
@@ -19,7 +25,8 @@ public class ElectrodomesticoApp {
 		array_electrodomesticos[7] = new Lavadora(100, 50);
 		array_electrodomesticos[8] = new Lavadora(20, "azul", 'E', 70, 90);
 		array_electrodomesticos[9] = new Television();
-
+		
+		// Mostramos el precio de cada electrodomestico y lo guardamos en una variable dependiendo del tipo.
 		for (int i = 0; i < array_electrodomesticos.length; i++) {
 
 			array_electrodomesticos[i].precioFinal();
