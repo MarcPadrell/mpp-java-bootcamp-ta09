@@ -152,6 +152,46 @@ public class Asientos {
 
 	}
 
+	public void mostrarEspectadores() {
+
+		Iterator<Espectador> it = list_espectadores.iterator();
+		while (it.hasNext()) {
+			Espectador espectador = it.next();
+			if (hash_dinero.get(espectador.getNombre()) && hash_edad.get(espectador.getNombre())) {
+				if (hash_asiento.get(espectador.getNombre()) != null) {
+					System.out.println("Espectador " + espectador.getNombre() + " sentado: "
+							+ hash_asiento.get(espectador.getNombre()));
+
+				}
+			}
+		}
+
+	}
+
+	public void mostrarDinero() {
+
+		Iterator<Espectador> it = list_espectadores.iterator();
+		while (it.hasNext()) {
+			Espectador espectador = it.next();
+			if (hash_dinero.get(espectador.getNombre())) {
+				System.out.println("Espectador con dinero: " + espectador.getNombre());
+			}
+		}
+
+	}
+
+	public void mostrarEdad() {
+
+		Iterator<Espectador> it = list_espectadores.iterator();
+		while (it.hasNext()) {
+			Espectador espectador = it.next();
+			if (hash_edad.get(espectador.getNombre())) {
+				System.out.println("Espectador con la edad: " + espectador.getNombre());
+			}
+		}
+
+	}
+
 	public int getFilas() {
 		return filas;
 	}

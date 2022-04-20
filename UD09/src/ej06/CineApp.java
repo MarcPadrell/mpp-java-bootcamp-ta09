@@ -49,14 +49,22 @@ public class CineApp {
 		array_asientos[0].ponerBooleanDinero();
 		array_asientos[0].ponerBooleanEdad();
 		array_asientos[0].sentarGente();
-
-		System.out.println("Asientos 1" + array_asientos[0]);
+		
+		System.out.println("\nSALA 1");
+		array_asientos[0].mostrarEspectadores();
+		array_asientos[0].mostrarDinero();
+		array_asientos[0].mostrarEdad();
+		//System.out.println("Gente con el dinero para la primera sala: " + array_asientos[0].getHash_dinero());
 
 		array_asientos[1].ponerBooleanDinero();
 		array_asientos[1].ponerBooleanEdad();
 		array_asientos[1].sentarGente();
-
-		System.out.println("Asientos 2" + array_asientos[1]);
+		
+		System.out.println("\nSALA 2");
+		array_asientos[1].mostrarEspectadores();
+		array_asientos[1].mostrarDinero();
+		array_asientos[1].mostrarEdad();
+		//System.out.println("Gente con el dinero para la primera sala: " + array_asientos[1].getHash_dinero());
 
 	}
 
